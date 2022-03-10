@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens dinamicas</title>
+</head>
+<body>
+    <h1>imagens dinamicas</h1>
+    <p>diminua o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto-g">
+    </picture>
+
+    <h1>reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="midia/cameras-albis.mp3" controls autoplay></audio>
+    <!-- MP3 WAV OGG-->
+<br>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/cameras-albis.mp3" type="audio/mpeg">
+        <source src="midia/cameras-albis.ogg" type="audio/ogg">
+        <source src="midia/cameras-albis.mp3" type="audio/wav">
+        
+    </audio>
+    <p>infelizmente seu navegador não consegue reproduzir audio.<a href="midia/cameras-albis.mp3">clique aqui para baixar o arquivo .mp3</a></p>
+</body>
+</html>
